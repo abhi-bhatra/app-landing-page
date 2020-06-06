@@ -1,0 +1,93 @@
+
+/*Add a cover background picture for the featured part with a fixed height.*/
+.jumbotron {
+    background: url(https://freenaturestock.s3.us-east-1.amazonaws.com/1640.jpg);
+    background-size: 100%, 100%;
+    height: 600px;
+}
+
+/*Size of logo*/
+.logo {
+    width: 50px;
+    height: 50px;
+    border-left: 50px;
+}
+
+/*Set text color of featured content*/
+.featured {
+  color: #fff;
+  padding-top: 70px;
+}
+/*style links*/
+.featured .btn-default{
+    font-weight: bold;
+    color: white;
+    background-color: rgba(145, 82, 58, 0.7);
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 160px;
+    margin-right: 15px;
+    border-style: solid;
+}
+.featured .btn-default:hover{
+    background-color: rgb(145, 82, 58);
+}
+/*trial section*/
+.trial{
+    text-align: center;
+    padding: 20px 0 40px 0;
+    color: black;
+}
+/*pictures */
+.trial img{
+    width: 200px;
+    height: 70px;
+    margin: 20px;
+}
+/*Add styling for devices between 480px and 760px*/
+@media(min-width: 480px) and (max-width: 760px){
+    .jumbotron{
+        height: 410px;
+        margin: 0;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .featured h1{
+        padding-top: 0px;
+    }
+    .featured p{
+        font-size: 17px;
+    }
+    .featured{
+        text-align: center;
+    }
+}
+
+
+/*Add styling for devices under 480px*/
+@media(max-width: 480px){
+    .jumbotron{
+        height: 410px;
+        margin: 0;
+    }
+    .logo{
+        width: 40px;
+        height: 40px;
+    }
+    .featured h1{
+        padding-top: 10px;
+    }
+    .featured p, .featured a{
+        font-size: 13px;
+    }
+    .featured{
+        text-align: center;
+    }
+    .trial img{
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+}
+}
